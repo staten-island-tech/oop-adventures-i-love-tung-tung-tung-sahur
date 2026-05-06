@@ -6,11 +6,14 @@ class tung:
         self.attackpower = attackpower
     def beginnings(self,answer):
         self.answer=answer
-        answer = input("wake up?").lower()
+        answer = input("wake up? ").lower()
         if answer != "no":
             print("welcome big triple t")
         else:
             print("game over")
+    def damage(self,morale,attackpower):
+        mrle=morale*0.01
+        dmg=mrle*attackpower
 TripleT=tung(100,10,0,1)
 TripleT.beginnings("")
 
