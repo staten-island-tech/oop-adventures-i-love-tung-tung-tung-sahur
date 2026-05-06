@@ -4,17 +4,15 @@ class tung:
         self.aura = aura    #currency
         self.morale = morale    #percent increase/decrease multiplier to attackpower
         self.attackpower = attackpower
-    def beginnings():
-        answer = input("wake up?")
-        answer = answer.lower
-        if answer == "yes":
+    def beginnings(self,answer):
+        self.answer=answer
+        answer = input("wake up?").lower()
+        if answer != "no":
             print("welcome big triple t")
-        
-        elif answer == "no":
+        else:
             print("game over")
-        return
-
-    beginnings()
+TripleT=tung(100,10,0,1)
+TripleT.beginnings("")
 
 
     
