@@ -28,34 +28,32 @@ class enemy:
         self.enemhealth = enemhealth
         self.enemattack = enemattack
         self.lootedaura = lootedaura
-    class tung:
-        def __init__(self,health,aura,morale,attackpower):
-            self.health = health
-            self.aura = aura    #currency
-            self.morale = morale    #percent increase/decrease multiplier to attackpower
-            self.attackpower = attackpower
-        def beginnings(self,answer):
-         self.answer=answer
+class tung:
+    def __init__(self,health,aura,morale,attackpower):
+        self.health = health
+        self.aura = aura    #currency
+        self.morale = morale    #percent increase/decrease multiplier to attackpower
+        self.attackpower = attackpower
+    def beginnings(self,answer):
+        self.answer=answer
         answer = input("wake up?").lower()
         if answer != "no":
             print("welcome big triple t")
         else:
             print("game over")
-    TripleT=tung(100,10,0,1)
-    TripleT.beginnings("")
-def shop(Purchasables):
-    shopask = input("would you like to shop?")
-    shopask = shopask.lower
-
-    if shopask != "no":
-        print(Purchasables,attackpower,aura,health,TripleT)
-        shopbuy = input("what would you like to purchase").lower()
-        if shopbuy == "tungtunggodrelic" :
-            self.health += 50
+    def shop(self, Purchasables,attackpower,aura,health,TripleT):
+        shopask = input("would you like to shop?").lower()
+        if shopask != "no":
+            print(Purchasables,attackpower,aura,health,TripleT)
+            shopbuy = input("what would you like to purchase").lower()
+            if shopbuy == "tungtunggodrelic" :
+                self.health += 50
             
         
 
             
 
-            shop(Purchasables) 
+    shop(Purchasables) 
+TripleT=tung(100,10,0,1)
+TripleT.beginnings("")
     
