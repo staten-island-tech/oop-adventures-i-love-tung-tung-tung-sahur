@@ -8,10 +8,10 @@ def getPoke(poke):
     
     data = response.json()
     return {
-        'name': 'bulbasaur',
-        'height': 7,
-        'weight': 69,
-        'types': ['grass', 'poison']
+        "name": data["name"],
+        "height": data["height"],
+        "weight": data["weight"],
+        "types": [t["type"]["name"] for t in data["types"]]
     }
 
 pokemon = getPoke("Bulbasaur")
