@@ -41,10 +41,10 @@ class tung:
             print("welcome big triple t")
         else:
             print("game over")
-    def shop(self, Purchasables,attackpower,aura,health,TripleT):
+    def shop(self, Purchasables,attackpower,aura,health):
         shopask = input("would you like to shop?").lower()
         if shopask != "no":
-            print(Purchasables,attackpower,aura,health,TripleT)
+            print(Purchasables,attackpower,aura,health)
             shopbuy = input("what would you like to purchase").lower()
             if shopbuy == "tungtunggodrelic" :
                 self.health += 50
@@ -53,7 +53,7 @@ class tung:
 
             
 
-    shop(Purchasables) 
+    
 TripleT=tung(100,10,0,1)
 TripleT.beginnings("")
-    
+TripleT.shop(Purchasables, TripleT.attackpower, TripleT.aura, TripleT.health)
