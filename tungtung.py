@@ -77,11 +77,14 @@ class tung:
         else:
             print("game over")
     def shop(self, Purchasables,attackpower,aura,health,TripleT):
+    def shop(self, Purchasables,attackpower,aura,health,TripleT):
         shopask = input("would you like to shop?").lower()
         if shopask != "no":
             print(Purchasables,attackpower,aura,health,TripleT)
+            print(Purchasables,attackpower,aura,health,TripleT)
             shopbuy = input("what would you like to purchase").lower()
             if shopbuy == "tungtunggodrelic" :
+                print('bought item!')
                 print('bought item!')
                 self.health += 50
            
