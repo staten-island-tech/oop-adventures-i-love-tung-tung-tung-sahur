@@ -3,12 +3,15 @@
 tungtunggodrelic = {
         "name":"tungtunggodrelic",
         "cost": 10,
-       
+        'health':50,
+        'attack':5
 }
 tungtunggodbat = {
         "name":"tungtunggodbat",
         "cost": 10,
-       
+        'health':0,
+        'attack':20
+        
 }
 
 
@@ -72,6 +75,8 @@ class tung:
         self.morale = morale    #percent increase/decrease multiplier to attackpower
         self.attackpower = attackpower
         self.dmg=attackpower+(attackpower*morale*0.01)
+    def damage(self,attackpower,morale):
+        self.dmg=attackpower+(attackpower*morale*0.01)
     def beginnings(self,answer):
         self.answer=answer
         answer = input("wake up? ").lower()
@@ -79,7 +84,7 @@ class tung:
             print("welcome big triple t")
         else:
             print("game over")
-    def shop(self, Purchasables,attackpower,aura,health,):
+    def shop(self, Purchasables,attackpower,aura,health,morale):
         shopask = input("would you like to shop? ").lower()
         if shopask != "no":
             print(Purchasables,attackpower,aura,health,)
@@ -90,17 +95,14 @@ class tung:
             elif aura == 0:
                 print("you are now broke")
             else:
-                if shopbuy == "tungtunggodrelic" :
-                    print('bought item!')
-                    self.health += 50
-                    self.aura -= 10
-                    self.attackpower += 5
-                elif shopbuy == "tungtunggodbat":
-                    print('bought item!')
-                    self.aura -= 10
-                    self.attackpower += 20
-                else:
-                    print("im sorry we dont have that item in stock")
+                for item in Purchasables:
+                    if shopbuy in Purchasables:
+                        print('bought item!')
+                        self.aura-=Purchasables[item]['cost']
+                        self.health+=Purchasables[item]['health']
+                        self.attackpower+=Purchasables[item]['attack']
+                    elif shopbuy not in item:
+                        print("im sorry we dont have that item in stock")
            
    
        
@@ -122,5 +124,5 @@ mutatedsupertung = enemy(60,10,2)
 
 TripleT=tung(100,10,0,1)
 TripleT.beginnings("")
-TripleT.shop(Purchasables,TripleT.attackpower,TripleT.aura,TripleT.health)
+TripleT.shop(Purchasables,TripleT.attackpower,TripleT.aura,TripleT.health,TripleT.morale)
 print('health:',TripleT.health,'aura:',TripleT.aura,'morale:',TripleT.morale,'attackpower:',TripleT.attackpower,'damage:',TripleT.dmg)
