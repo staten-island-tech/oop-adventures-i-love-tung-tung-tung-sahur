@@ -1,15 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 class tung:
     def __init__(self,health,aura,attackpower):
         self.health = health

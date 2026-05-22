@@ -13,7 +13,7 @@ tungtunggodbat = {
 Purchasables = [tungtunggodrelic,tungtunggodbat]
 
 
-def shop(self, Purchasables,attackpower,aura,health,):
+def shop(self, Purchasables,attackpower,aura,health):
         shopask = input("would you like to shop?").lower()
         if shopask != "no":
             print(Purchasables,attackpower,aura,health,)
@@ -37,4 +37,5 @@ def shop(self, Purchasables,attackpower,aura,health,):
             
             elif aura == 0:
                 print("you are now broke") 
+        shop(self, Purchasables,attackpower,aura,health)
 
