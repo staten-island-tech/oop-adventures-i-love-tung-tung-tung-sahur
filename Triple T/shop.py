@@ -37,5 +37,4 @@ def shop(self, Purchasables,attackpower,aura,health):
             
             elif aura == 0:
                 print("you are now broke") 
-        shop(self, Purchasables,attackpower,aura,health)
 

@@ -1,10 +1,10 @@
 import random
 
 class enemy:
-        def __init__(self,enemhealth,enemattack,lootedaura):
-            self.enemhealth = enemhealth
-            self.enemattack = enemattack
-            self.lootedaura = lootedaura
+    def __init__(self,enemhealth,enemattack,lootedaura):
+        self.enemhealth = enemhealth
+        self.enemattack = enemattack
+        self.lootedaura = lootedaura
 
 eviltungtung = enemy(40,10,2)
 evilrabiesdog = enemy(25,20,3)
@@ -32,4 +32,4 @@ def enemyencounter():
     
 
 
-enemyencounter()
+#enemyencounter()
