@@ -1,3 +1,4 @@
+import ugui
 import shop
 import enemies
 import boss
@@ -7,15 +8,6 @@ class tung:
         self.health = health
         self.aura = aura    #currency
         self.attackpower = attackpower
-    def beginnings(answer):
-            answer = input("wake up?").lower()
-            if answer != "no":
-                print("welcome big triple t")
-            else:
-                ("game over")
-
-
-            
         
 #enemies.Enemies      
 TripleT=tung(100,10,1)
