@@ -1,4 +1,4 @@
-def beginnings():
+def beninnins():
     import tkinter as tk
     from tkinter import messagebox
 
@@ -9,7 +9,7 @@ def beginnings():
             messagebox.showwarning("Input Error", "Wake up?")
             return
         elif ans!='no':
-            messagebox.showinfo("Greeting", "Hello, Triple T!")
+            messagebox.showinfo("Greetings", "Hello, Triple T!")
         else:
             messagebox.showinfo('GAME OVER', 'GAME OVER')
 

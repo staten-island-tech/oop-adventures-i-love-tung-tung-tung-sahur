@@ -8,7 +8,8 @@ class tung:
         self.health = health
         self.aura = aura    #currency
         self.attackpower = attackpower
-        
+    def beginnings():
+        return ugui.beninnins()
 #enemies.Enemies      
 TripleT=tung(100,10,1)
 TripleT.beginnings()
