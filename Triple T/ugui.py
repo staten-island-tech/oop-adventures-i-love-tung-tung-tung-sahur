@@ -16,7 +16,7 @@ def beninnins():
     # Create the main application window
     root = tk.Tk()
     root.title('tungtungtung sahur')
-    root.geometry("200,150")  # Width x Height
+    root.geometry("200x150")  # Width x Height
 
     # Create a label
     label = tk.Label(root, text="Wake up?", font=("Sitka Display", 12))
@@ -32,3 +32,4 @@ def beninnins():
 
     # Start the Tkinter event loop
     root.mainloop()
+#beninnins()
