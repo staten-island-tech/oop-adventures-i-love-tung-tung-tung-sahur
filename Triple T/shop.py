@@ -24,7 +24,7 @@ def shop(self, Purchasables,attackpower,aura,health):
             self.aura -= 10
             self.attackpower += 5
             
-        if shopbuy == "tungtunggodbat":
+        elif shopbuy == "tungtunggodbat":
             print('bought item!')
             self.aura -= 10
             self.attackpower += 20

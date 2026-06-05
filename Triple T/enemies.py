@@ -12,7 +12,7 @@ def enenimy():
     mutatedsupertung = enemy(60,10,2)
     Enemies = [evilrabiesdog,eviltungtung,mutatedsupertung]
     def enemyencounter():
-        enemysearch = input('would you like to search for enemies?').lower
+        enemysearch = input('would you like to search for enemies? ').lower
         if enemysearch != "no":
             print("ok searching for enemies")
             enemyfound = random.choice(Enemies)

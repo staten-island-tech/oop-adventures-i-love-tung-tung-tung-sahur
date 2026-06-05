@@ -9,7 +9,7 @@ class tung:
         self.aura = aura    #currency
         self.attackpower = attackpower
     def beginnings(self):
-        return ugui.beninnins()
+        return ugui.beninnings()
     def shopi(self,Purchasables,attackpower,aura,health):
         return shop.shop(self,Purchasables,attackpower,aura,health)
     def enemi(self):
