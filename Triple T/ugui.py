@@ -4,7 +4,7 @@ def beninnings():
 
     # Function to handle button click
     def beninnins():
-        ans = name_entry.get().strip().lower()
+        ans = name_entry.get().lower()
         if not ans:
             messagebox.showwarning("Input Error", "Wake up?")
             return
@@ -32,4 +32,4 @@ def beninnings():
 
     # Start the Tkinter event loop
     root.mainloop()
-#beninnings()
+beninnings()
