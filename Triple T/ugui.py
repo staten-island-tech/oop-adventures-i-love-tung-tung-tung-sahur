@@ -33,12 +33,3 @@ def beninnings():
     # Start the Tkinter event loop
     root.mainloop()
 #beninnings()
-def tiempo():
-    from tkinter import messagebox
-    import datetime
-    from datetime import datetime
-    now = datetime.now()  # Get current date and time
-    format = now.strftime("%Y-%m-%d %H:%M:%S")  # Format it
-    messagebox.showinfo('Date & Time', format)
-#while True: 
-tiempo()
