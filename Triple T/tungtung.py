@@ -1,7 +1,6 @@
 import ugui
 import shop
 import enemies
-import boss
 
 class tung:
     def __init__(self,health,aura,attackpower):
