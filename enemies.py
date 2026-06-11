@@ -29,6 +29,12 @@ def enemyencounter():
             print("you have found a evilrabiesdog!")
         elif enemyfound == mutatedsupertung:
             print("you have found a mutatedsupertung")
+        
+    
+        
+        
+
+        
     
 
 
