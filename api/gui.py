@@ -31,7 +31,7 @@ def name():
     root.mainloop()
 def button():
     import tkinter as tk
-from tkinter import messagebox
+    from tkinter import messagebox
 
     def show_message():
         messagebox.showinfo("Hi", "Button was clicked!")
@@ -44,4 +44,4 @@ from tkinter import messagebox
 
     root.mainloop()
 
- button()
+button()
