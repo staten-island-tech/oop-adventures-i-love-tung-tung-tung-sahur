@@ -4,14 +4,9 @@ def beninnings():
 
     # Function to handle button click
     def beninnins():
-        ans = name_entry.get().lower()
-        if not ans:
-            messagebox.showwarning("Input Error", "Wake up?")
-            return
-        elif ans!='no':
-            messagebox.showinfo("Greetings", "Hello, Triple T!")
-        else:
-            messagebox.showinfo('GAME OVER', 'GAME OVER')
+        messagebox.showinfo("Greetings", "Hello, Triple T!")
+    def begiggigs():
+        messagebox.showinfo('GAME OVER', 'GAME OVER')
 
     # Create the main application window
     root = tk.Tk()
