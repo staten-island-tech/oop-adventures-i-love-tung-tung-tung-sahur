@@ -1,5 +1,4 @@
 import enemies
-import boss
 
 
 tungtunggodrelic = {
