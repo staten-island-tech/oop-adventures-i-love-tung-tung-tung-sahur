@@ -1,19 +1,9 @@
-import tungtung
 import enemies
 import random
-def encounter():  
-    from enemies import enemyencounter
-    enemyencounter()
-    while enemies.enemyencounter == enemies.eviltungtung and tungtung.TripleT.health > 0 and enemies.eviltungtung.enemhealth > 0:
-        fighting == input("what action would you like to do? (attack)")
-        fighting = fighting.lower
-        if fighting == "attack":
-            print("attacked enemy")
 
 
 
 
-encounter()
 
 import random
 class Character:
@@ -45,9 +35,18 @@ def battle(player, enemy):
            print(f"{player.name} has been defeated!")
            break
    print("\nBattle Over!")
+player = Character(name="Hero", health=100, attack=20, defense=5)
+enemy = Character(name="Goblin", health=80, attack=15, defense=3)
+# Start the battle
+def encounter():  
+    from enemies import enemyencounter
+    enemyencounter()
+    while enemies.enemyencounter == enemies.eviltungtung and Character.health > 0 and enemies.eviltungtung.enemhealth > 0:
+        fighting == input("what action would you like to do? (attack)")
+        fighting = fighting.lower
+        if fighting == "attack":
+            print("attacked enemy")
+encounter()
 if __name__ == "__main__":
    # Create player and enemy characters
-   player = Character(name="Hero", health=100, attack=20, defense=5)
-   enemy = Character(name="Goblin", health=80, attack=15, defense=3)
-   # Start the battle
    battle(player, enemy)
