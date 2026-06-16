@@ -1,6 +1,7 @@
 import tungtung
 import enemies
 from enemies import enemyencounter
+import random as rd
 
 
 def battle():
@@ -23,10 +24,10 @@ def battle():
 
 
         if action == "attack":
-            enemyhealth -= playerdamage
-            playerhealth -= enemyattack
+            enemyhealth -= rd.randint(1,playerdamage)
+            playerhealth -= rd.randint(1,enemyattack)
         elif action == "defend":
-            playerhealth -= enemyattack - 5
+            playerhealth -= rd.randint(1,enemyattack) - 5
         else:
             print("invalid action u do nothing nerd")
             playerhealth -= enemyattack
@@ -37,7 +38,7 @@ def battle():
             print("you win!")
             break
         if playerhealth <= 0:
-            print("you died rip")
+            print("you died R.I.P.")
             break
 
 

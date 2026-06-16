@@ -25,10 +25,10 @@ class tung:
         self.health = health
         self.aura = aura    #currency
         self.attackpower = attackpower
-    def shop(self, Purchasables,attackpower,aura,health):
+    def shop(self, Purchasables,aura,attackpower,health):
         shopask = input("would you like to shop?").lower()
         if shopask != "no":
-            print(Purchasables,attackpower,aura,health,)
+            print(Purchasables,aura,attackpower,health,)
             shopbuy = input("what would you like to purchase").lower()
             if shopbuy == "tungtunggodrelic" :
                 print('bought item!')
@@ -51,11 +51,12 @@ class tung:
                 print("you are now broke")
             print(self.__dict__)
     def beginnings(self,answer):
-            self.answer=answer
-            answer = input("wake up?").lower()
+            answer = input("wake up? ").lower()
             if answer != "no":
                 print("welcome big triple t")
             else:
-                ("game over")
+                print("game over")
            
 TripleT=tung(100,10,1)
+TripleT.beginnings('')
+TripleT.shop(Purchasables,TripleT.aura,TripleT.attackpower,TripleT.health)
