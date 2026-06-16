@@ -28,4 +28,4 @@ def beninnings():
 
     # Start the Tkinter event loop
     root.mainloop()
-beninnings()
+#beninnings()
